@@ -1,11 +1,26 @@
 import { AppProps } from 'next/app'
-import RootLayout from '@/components/Layout/Layout'
-import './globals.css'
+import { Slide, ToastContainer } from 'react-toastify';
+import { ProviderStore } from '@/store/provider'
+
+import { Layout } from '@/components/Layout';
+
+import 'react-toastify/dist/ReactToastify.css'
+import '../styles/globals.scss'
+import '../styles/reset.scss'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <RootLayout>
-      <Component {...pageProps} />
-    </RootLayout>
+    <ProviderStore>
+      <Layout>
+        <Component {...pageProps} />
+        <ToastContainer
+          transition={Slide}
+          hideProgressBar={true}
+          position='bottom-center'
+          draggableDirection='y'
+          theme='colored'
+        />
+      </Layout>
+    </ProviderStore>
   )
 }

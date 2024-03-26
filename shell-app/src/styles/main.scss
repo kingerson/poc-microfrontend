@@ -1,0 +1,132 @@
+:root {
+    --primary-1-5: #f6f4ff;
+    --primary-1-10: #e3ddfe;
+    --primary-1-20: #c2b5ff;
+    --primary-1-30: #8a71fc;
+    --primary-1-40: #603dff;
+    --primary-1-50: #3300ff;
+    --primary-1-60: #2c05c9;
+    --primary-1-70: #1e0094;
+    --primary-1-80: #1a0769;
+    --primary-1-90: #000051;
+    --primary-1-100: #000033;
+    --primary-brand: var(--primary-1-50);
+
+    --neutral-0: #ffffff;
+    --neutral-1: #333333;
+    --neutral-2: #606060;
+    --neutral-3: #9799a1;
+    --neutral-4: #e7e8e9;
+    --neutral-5: #f6f6f6;
+    --neutral-6: #fbfbfb;
+
+    --confirmation: #17ab4d;
+    --confirmation-1: #64c789;
+    --confirmation-2: #bae6ca;
+    --confirmation-3: #dcf3e5;
+
+    --error: #ff7a7a;
+    --error-1: #fe9393;
+    --error-2: #ffadad;
+    --error-3: #fccdcd;
+
+    --warning: #f5a623;
+    --warning-1: #f5a623;
+    --warning-2: #f8c471;
+    --warning-3: #fef2d8;
+
+    --tertiary-yellow-700: #ff9900;
+    --tertiary-yellow-500: #ffcc33;
+    --tertiary-yellow-100: #ffff99;
+    --tertiary-orange-700: #ff3300;
+    --tertiary-orange-500: #ff6600;
+    --tertiary-orange-100: #ffcc99;
+    --tertiary-pink-700: #990033;
+    --tertiary-pink-500: #ff0066;
+    --tertiary-pink-100: #ff99cc;
+    --tertiary-purple-700: #9900cc;
+    --tertiary-purple-500: #cc33cc;
+    --tertiary-purple-100: #ff99ff;
+    --tertiary-lilac-700: #4417cd;
+    --tertiary-lilac-500: #6633ff;
+    --tertiary-lilac-100: #9999ff;
+    --tertiary-blue-700: #013399;
+    --tertiary-blue-500: #0066ff;
+    --tertiary-blue-100: #99ccff;
+    --tertiary-green-700: #009900;
+    --tertiary-green-500: #99cc01;
+
+    --toastify-color-light: var(--neutral-0);
+    --toastify-color-dark: var(--neutral-1);
+    --toastify-color-info: var(--tertiary-blue-700);
+    --toastify-color-success: var(--confirmation);
+    --toastify-color-warning: var(--warning);
+    --toastify-color-error: var(--error);
+    --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+
+    --toastify-icon-color-info: var(--toastify-color-info);
+    --toastify-icon-color-success: var(--toastify-color-success);
+    --toastify-icon-color-warning: var(--toastify-color-warning);
+    --toastify-icon-color-error: var(--toastify-color-error);
+
+    --toastify-toast-width: 320px;
+    --toastify-toast-background: #fff;
+    --toastify-toast-min-height: 64px;
+    --toastify-toast-max-height: 800px;
+    --toastify-font-family: sans-serif;
+    --toastify-z-index: 9999;
+
+    --toastify-text-color-light: #757575;
+    --toastify-text-color-dark: #fff;
+
+    //Used only for colored theme
+    --toastify-text-color-info: #fff;
+    --toastify-text-color-success: #fff;
+    --toastify-text-color-warning: #fff;
+    --toastify-text-color-error: #fff;
+
+    --toastify-spinner-color: #616161;
+    --toastify-spinner-color-empty-area: #e0e0e0;
+
+    // Used when no type is provided
+    // toast("**hello**")
+    --toastify-color-progress-light: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    // Used when no type is provided
+    --toastify-color-progress-dark: #bb86fc;
+    --toastify-color-progress-info: var(--toastify-color-info);
+    --toastify-color-progress-success: var(--toastify-color-success);
+    --toastify-color-progress-warning: var(--toastify-color-warning);
+    --toastify-color-progress-error: var(--toastify-color-error);
+
+    --order-card-notification: var(--tertiary-blue-100);
+    --order-card-ready-to-deliver: var(--tertiary-green-500);
+    --order-card-delivered: transparent;
+    --order-card-delayed-time: var(--tertiary-orange-700);
+}
+
+body {
+    background-color: var(--neutral-0);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "'DM Sans', sans-serif";
+    min-height: 100vh;
+    height: auto;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--neutral-0);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--primary-brand);
+        border: 3px solid var(--neutral-0);
+        border-radius: 20px;
+    }
+}
+
+.debug {
+    outline: 1px solid red;
+}

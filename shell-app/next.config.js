@@ -17,7 +17,6 @@ const nextConfig = {
                 name: 'shell',
                 filename: 'static/chunks/remoteEntry.js',
                 exposes: {
-                    './nav': './src/components/Navbar/index.tsx',
                     './home': './src/pages/index.tsx',
                     './pages-map': './pages-map.js',
                 },

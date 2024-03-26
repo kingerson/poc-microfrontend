@@ -1,0 +1,15 @@
+.dashboard-gestor-layout {
+    position: relative;
+    background-color: var(--neutral-5);
+    min-height: 100vh;
+    margin-left: 240px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__body {
+        padding: 38px;
+    }
+}

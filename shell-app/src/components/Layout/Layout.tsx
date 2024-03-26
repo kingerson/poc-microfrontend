@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
-// import "./globals.css";
 import { ProviderStore } from "@/store/provider";
+import { dmsans } from "@/fonts";
 
-// const inter = Inter({ subsets: ["latin"] });
+import { Sidebar } from "../Sidebar";
+import Header from "../Header";
+
+import styles from './layout.module.scss'
 
 export const metadata: Metadata = {
   title: "Template Delosi",
@@ -16,10 +18,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // <html lang="es">
-    //   <body className={inter.className}>
-        <ProviderStore>{children}</ProviderStore>
-    //   </body>
-    // </html>
+    <ProviderStore>
+      <main className={`${styles['dashboard-gestor-layout']} ${dmsans.className}`}>
+        <Sidebar />
+        <div className={styles['dashboard-gestor-layout__wrapper']}>
+          <Header />
+          <div className={styles['dashboard-gestor-layout__body']}>{children}</div>
+        </div>
+      </main>
+    </ProviderStore>
   );
 }
