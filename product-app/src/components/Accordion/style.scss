@@ -1,0 +1,56 @@
+.acordion {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+
+  &__button {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+    padding: 8px 20px;
+    width: 100%;
+  }
+
+  &__title {
+    flex: -1;
+    text-align: left;
+  }
+
+  &__expand {
+    align-items: center;
+    color: currentcolor;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  &__text {
+    font-size: small;
+    margin-right: 2px;
+  }
+
+  &__icon {
+    align-items: center;
+    color: currentcolor;
+    display: flex;
+
+    &-chevron {
+      height: 26px;
+      transform: rotate(180deg);
+      width: 26px;
+
+      &--is-open {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__content {
+    border-bottom: 4px;
+  }
+}
