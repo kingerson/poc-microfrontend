@@ -1,2 +1,8 @@
-# poc-microfrontend
-poc-microfrontend
+# Micro FrontEnd
+
+## How to Run Project
+
+``` bash
+npm i
+npm start 
+```
